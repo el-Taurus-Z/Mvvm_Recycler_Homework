@@ -28,9 +28,8 @@ class CardViewHolder(itemView: View, private val OnItemClickListener: OnCardItem
 
 
     fun bindItem(item: NewGraphicCard) {
-        with(item) {
             nameOfCard.text=item.cardInfo
-        }
+
         rootView.setOnClickListener{
             OnItemClickListener.OnItemClick(item)
         }
